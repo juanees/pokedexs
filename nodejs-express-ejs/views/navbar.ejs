@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+	  <div class="navbar-header">
+		<a class="navbar-brand" href="/">Pokedex</a>
+	  </div>
+	  <ul class="nav navbar-nav">		
+		<li><a href="/liked">liked</a></li>
+	  </ul>
+	  <ul class="nav navbar-nav navbar-right">
+		<li>
+			<form action="/search?source=navBar" method="post" id="search-form" class="form-inline">
+				
+				<input type="text" id="pokemon" placeholder="Search" name="pokemonSearch" /> 
+  
+			  <input type="submit" class="btn btn-primary" />
+			</form>
+		</li>      
+	  </ul>
+	</div>

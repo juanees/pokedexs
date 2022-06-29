@@ -1,0 +1,29 @@
+<% include head %>
+</head>
+<body>
+	<% include navbar %>
+	<div class="container">
+		<div class="row">
+      <% if(data.pokemon){ %>
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <h1 class="single-pokemon-title">
+            <%= data.title %>
+          </h1>
+          
+          <img src="<%= data.pokemon.sprites.front %>" />
+          
+          <p class="overview-header">Pokemon id: <span class="single-pokemon-overview">
+            <%= data.pokemon.id %>
+          </span></p>
+        </div>
+      <% } else{ %>  
+        <div class="col-md-3 col-sm-4 poster">
+          <p><%= data.error %></p>
+        </div>
+     <% } %>
+			
+		</div>
+	</div>
+
+</body>
+</html>
